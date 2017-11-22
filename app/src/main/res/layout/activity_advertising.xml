@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB">
+    <include layout="@layout/title_back"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+    <EditText
+        android:id="@+id/buy_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="请输入需要积分数量"
+        android:padding="20dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize_7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/star_show"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:text="*"
+            android:textColor="@color/title_backgroid"
+            />
+        <TextView
+            android:id="@+id/show_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#AAABAA"
+            android:text="推广系数1.2，推广后积分数量冻结，冻结后的45-61天内(天数后台设置)，通过将平台信息分享至第三方的形式分10次返还，每次返回10%"
+            android:textSize="@dimen/textsize_6"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/conrnerbg_tijiao_jiao"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="确定推广"
+        android:textSize="@dimen/textsize_9"
+        android:gravity="center"/>
+</LinearLayout>

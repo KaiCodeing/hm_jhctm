@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_back"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+
+    <TextView
+        android:id="@+id/search_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2D2D2"
+        android:padding="15dp"
+        android:text="当前搜索: 名酒店"
+        android:textColor="#303030"
+        android:textSize="@dimen/textsize_8" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/no_search_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/search_no_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="暂无您想要的搜索结果"
+                android:textColor="#929292"
+                android:textSize="@dimen/textsize_8" />
+        </LinearLayout>
+
+        <com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout
+            android:id="@+id/refreshLoadmoreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#ffff0000"
+                android:dividerHeight="10dp"></android.support.v7.widget.RecyclerView>
+        </com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</LinearLayout>

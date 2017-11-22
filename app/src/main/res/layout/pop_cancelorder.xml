@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:gravity="left|top"
+        android:padding="12dp"
+        android:background="#efefef"
+        android:text=""
+        android:textColor="#575757"
+        android:hint="请输入您的退款原因"
+        android:textColorHint="#a0a0a0"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

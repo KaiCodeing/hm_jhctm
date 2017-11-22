@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="16dp" >
+
+            <com.hemaapp.hm_FrameWork.view.RoundedImageView
+                android:id="@+id/user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:background="@color/white"
+                android:scaleType="centerCrop">
+
+            </com.hemaapp.hm_FrameWork.view.RoundedImageView>"
+
+            <View
+                android:id="@+id/show_message"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_message"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="left"
+                    android:text="系统消息"
+                    android:textColor="#3F3F3F"
+                    android:textSize="@dimen/textsize_8"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="2012-12-10 18:20"
+                    android:textColor="#A0A0A0"
+                    android:textSize="@dimen/textsize_6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+
+                android:text="你的昵称很好你你昵称很好你你昵称很好你你昵称很好你你昵称很好你你昵称很好你你昵称很好你你昵称很好你你昵称很好你你的昵称很好你你的昵称很好你你的昵称很好你你的昵称很好你你的昵称很好你"
+                android:textColor="#5E5E5E"
+                android:textSize="@dimen/textsize_7" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+</LinearLayout>

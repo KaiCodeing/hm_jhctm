@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <com.hemaapp.hm_FrameWork.view.RoundedImageView
+            android:id="@+id/imageview"
+            android:layout_width="80dp"
+        	android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="#121212"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="@mipmap/carme_delete_img" />
+    </FrameLayout>
+
+</LinearLayout>

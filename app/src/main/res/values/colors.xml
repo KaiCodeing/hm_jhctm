@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F10215</color>
+    <color name="colorPrimaryDark">#F10215</color>
+    <color name="colorAccent">#F10215</color>
+    <color name="title_backgroid">#F10215</color>
+    <color name="backgroid_check">#F10215</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="color_text">#191919</color>
+    <color name="shaixuan">#272727</color>
+    <color name="jiaoyi_jian">#F04A4A</color>
+    <color name="tuikuan">#373737</color>
+    <color name="no_enabled">#B5B5B5</color>
+    <color name="infor">#303030</color>
+    <color name="car_">#F29217</color>
+    <color name="guige_b">#F1F2F6</color>
+    <color name="text_select_bank">#EEEEEE</color>
+    <color name="subtract_spect">#4B8ADE</color>
+    <color name="lan_xiaofei">#4089CE</color>
+    <color name="xian">#d9d9d9</color>
+    <color name="shenhui">#2f2f2f</color>
+    <color name="blue">#3081cd</color>
+</resources>

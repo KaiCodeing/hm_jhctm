@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECEB">
+    <include layout="@layout/title_back"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout
+            android:id="@+id/refreshLoadmoreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <xtom.frame.view.XtomListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:listSelector="@color/transparent" />
+
+
+        </com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/buy_quan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/hecheng_ka_img"
+        >
+        <ImageView
+            android:id="@+id/go_to_web"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/duihuan_wen_img"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"/>
+    </FrameLayout>
+</LinearLayout>

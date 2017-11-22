@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_back"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_8"/>
+        <TextView
+            android:text="头像"
+            android:textSize="@dimen/textsize_8"
+            android:layout_width="wrap_content"
+            android:textColor="#2F2F2F"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/touxiang_img"
+            android:scaleType="centerCrop"
+            />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/sanjiao_name"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="姓名"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/textsize_8" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center"
+            android:hint="请输入您的真实姓名"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="1dp"
+        android:paddingTop="15dp"
+        android:background="@color/white"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_8"/>
+        <TextView
+            android:text="身份证号"
+            android:textSize="@dimen/textsize_8"
+            android:layout_width="wrap_content"
+            android:textColor="#2F2F2F"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+        <EditText
+            android:id="@+id/user_num"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入您的身份证号"
+            android:gravity="right|center"
+            android:textSize="@dimen/textsize_7"
+            android:singleLine="true"
+            android:maxLength="18"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/conrnerbg_tijiao_jiao"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:textSize="@dimen/textsize_9"
+        android:gravity="center"/>
+</LinearLayout>

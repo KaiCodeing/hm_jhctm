@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="left|center"
+        android:background="#E9ECEB">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#212121"
+            ></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="失效商品"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textsize_8"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+        <TextView
+            android:id="@+id/delete_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_8"
+            android:textColor="#838383"
+            android:text="清空"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/check_select_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/fapiao_check_off"
+            android:layout_gravity="center"
+           />
+        <ImageView
+            android:id="@+id/out_car"
+            android:layout_width="45dp"
+            android:visibility="gone"
+            android:layout_height="25dp"
+            android:background="@mipmap/put_car_img"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/chanp_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/hotel_defult_img"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/commod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="商品名称"
+                android:singleLine="true"
+                android:textColor="#464646"
+                android:textSize="@dimen/textsize_9"
+                />
+            <TextView
+                android:id="@+id/content_commid"
+                android:textSize="@dimen/textsize_8"
+                android:layout_marginTop="5dp"
+                android:text="规格:500ml*2"
+                android:textColor="#A0A0A0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|left"
+                >
+
+                <TextView
+                    android:id="@+id/commod_moeny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="235.6"
+
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_10"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_7"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></View>
+                <ImageView
+                    android:id="@+id/subtarct"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="7.5dp"
+                    android:paddingRight="7.5dp"
+                    android:src="@mipmap/guige_minus_img" />
+
+                <TextView
+                    android:id="@+id/add_or_subtract"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#2F2F2F"
+                    android:textSize="@dimen/textsize_6" />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="7.5dp"
+                    android:paddingRight="7.5dp"
+                    android:src="@mipmap/guige_add_img" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1E2E3"></View>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center|left|top"
+    android:orientation="vertical"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/commind_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/defult_gridview_img" />
+
+        <ImageView
+            android:id="@+id/check_in"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:background="@mipmap/fapiao_check_off" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/commod_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品内容"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#313131"
+        android:textSize="@dimen/textsize_7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/num_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="2365"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_8" />
+
+        <TextView
+            android:id="@+id/jf_or_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_6" />
+
+        <TextView
+            android:id="@+id/add_bz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="+"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_8" />
+
+        <TextView
+            android:id="@+id/fenxiang_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享500"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pinpai_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_pingpai_quan"
+            android:padding="5dp"
+            android:text="品牌商"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_6"
+            />
+
+        <TextView
+            android:id="@+id/commod_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已售400 好评率80%"
+            android:singleLine="true"
+            android:textColor="#A1A1A1"
+            android:textSize="@dimen/textsize_6"
+          />
+    </LinearLayout>
+</LinearLayout>

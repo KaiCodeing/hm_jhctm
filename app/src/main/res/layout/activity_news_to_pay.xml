@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB">
+    <include layout="@layout/title_right_text"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号:123456789"
+        android:padding="5dp"
+        android:textColor="#2F2F2F"
+        android:textSize="@dimen/textsize_8"/>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖家:董小姐 18800000000"
+        android:padding="5dp"
+        android:textSize="@dimen/textsize_7"/>
+</LinearLayout>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待付款"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="#3081CD"
+            android:textSize="@dimen/textsize_7"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/conrnerbg_tijiao_jiao"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="立即支付"
+        android:textSize="@dimen/textsize_9"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+</LinearLayout>

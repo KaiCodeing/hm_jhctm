@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/bank_img"
+
+            />
+        <TextView
+            android:id="@+id/select_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search_bg"
+            android:text="商品"
+            android:drawableRight="@mipmap/search_jiao_img"
+            android:drawablePadding="5dp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/search_log"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_bg"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@mipmap/search_img"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:hint="输入超市关键词进行搜索"
+            android:textSize="@dimen/textsize_6"
+            android:singleLine="true"
+            android:textColor="#A2A2A2"
+            android:drawablePadding="5dp"/>
+        <TextView
+            android:id="@+id/message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_7"
+            android:textColor="#2F2F2F"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>

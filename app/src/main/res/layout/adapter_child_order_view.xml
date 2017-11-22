@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#D4D4D4"></View>
+
+    <LinearLayout
+        android:id="@+id/item_hoetl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/commod_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/hotel_defult_img"
+            android:padding="1dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="商品名称"
+                android:textColor="#2F2F2F"
+                android:textSize="@dimen/textsize_7" />
+
+            <TextView
+                android:id="@+id/hotel_money"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="规格:500ml*2瓶；数量：1"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/textsize_7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="265"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_8" />
+
+                <TextView
+                    android:id="@+id/jifen_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_6" />
+
+                <TextView
+                    android:id="@+id/add_bz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="+"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_8" />
+
+                <TextView
+                    android:id="@+id/fenxiang_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享500"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_7" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"></View>
+
+    <TextView
+        android:id="@+id/guige_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F7F7"
+        android:gravity="center|right"
+        android:padding="15dp"
+        android:text="共1个商品，合计：200积分+分享20"
+        android:textColor="#2F2F2F"
+        android:textSize="@dimen/textsize_7" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"></View>
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F6F7F7"
+        android:padding="15dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"></View>
+        <TextView
+            android:id="@+id/order_cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="取消订单"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:background="@drawable/order_cancel_text"
+            />
+
+        <TextView
+            android:id="@+id/order_over"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="去支付"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/title_backgroid"
+            android:gravity="center"
+            android:background="@drawable/order_over_text"
+            />
+    </LinearLayout>
+</LinearLayout>

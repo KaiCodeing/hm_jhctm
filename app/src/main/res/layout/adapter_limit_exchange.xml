@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/limit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="开始时间:"
+            android:textColor="#536579"
+            android:textSize="@dimen/textsize_8" />
+
+        <TextView
+            android:id="@+id/time_h"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/limit_time_bg"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/limlit_dian" />
+
+        <TextView
+            android:id="@+id/time_m"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/limit_time_bg"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/limlit_dian" />
+
+        <TextView
+            android:id="@+id/time_s"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/limit_time_bg"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_hoetl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/commod_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/hotel_defult_img"
+            android:padding="1dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="商品名称"
+                android:textColor="#2F2F2F"
+                android:textSize="@dimen/textsize_7" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hotel_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="兑换券"
+                    android:textColor="#A0A0A0"
+                    android:textSize="@dimen/textsize_7" />
+
+                <TextView
+                    android:id="@+id/jifen_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="800"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="积分"
+                    android:textColor="@color/title_backgroid"
+                    android:textSize="@dimen/textsize_7" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></View>
+
+                <TextView
+                    android:id="@+id/jffh_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/linearLayout"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:background="@drawable/line_bg"
+                    android:padding="3dp"
+                    android:text="积分不返还"
+                    android:textSize="@dimen/textsize_6" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/pay_layout">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:id="@+id/pay_or_out"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/title_backgroid"
+            android:padding="3dp"
+            android:text="立即兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_9" />
+    </LinearLayout>
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"></View>
+</LinearLayout>

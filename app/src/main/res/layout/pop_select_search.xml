@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/search_com"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:background="@mipmap/pop_search_jiao"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp">
+        <RadioButton
+            android:id="@+id/commodity"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="商品"
+            android:checked="true"
+            android:textColor="@drawable/search_com_mer"
+            android:gravity="center"
+            android:button="@null"
+            />
+        <RadioButton
+            android:id="@+id/merchant"
+            android:textColor="@drawable/search_com_mer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="商家"
+            />
+    </RadioGroup>
+</LinearLayout>

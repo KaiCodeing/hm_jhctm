@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB">
+    <include layout="@layout/title_back"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout
+            android:id="@+id/refreshLoadmoreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" >
+
+                    <xtom.frame.view.XtomListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:listSelector="@color/transparent" />
+
+        </com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/share_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/share_img"
+            android:text="分享"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/textsize_7"/>
+        <TextView
+            android:id="@+id/collection_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/collection_off_img"
+            android:text="收藏"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/textsize_7"/>
+        <TextView
+            android:id="@+id/car_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/buy_car_img"
+            android:text="购物车"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/textsize_7"/>
+        <TextView
+            android:id="@+id/add_car_text"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_7"
+            android:background="#F29317"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/goto_apliy"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_7"
+            android:background="@color/title_backgroid"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

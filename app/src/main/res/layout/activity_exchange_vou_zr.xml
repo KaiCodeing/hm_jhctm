@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_back"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+
+    <EditText
+        android:id="@+id/integral_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@color/white"
+        android:hint="请输入转让金积分数量"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize_7" />
+
+    <TextView
+        android:id="@+id/score_only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="最多可转让5600"
+        android:textColor="@color/title_backgroid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/money_img" />
+
+        <EditText
+            android:id="@+id/integral_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:hint="请输入转让金积分价格"
+            android:paddingBottom="20dp"
+
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_7" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/buy_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="请输入买家注册手机号"
+        android:padding="20dp"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize_7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:text="*"
+            android:textColor="@color/title_backgroid"
+           />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="输入买家手机号，系统将消息推送给买家，买家须在15分钟内完成支付，反之推送自动失效"
+        android:textColor="#AAABAA"
+        android:textSize="@dimen/textsize_6"
+       />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/conrnerbg_tijiao_jiao"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="确定转让"
+        android:textSize="@dimen/textsize_9"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB">
+    <include layout="@layout/title_back"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+    <EditText
+        android:id="@+id/pwd_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:drawableLeft="@mipmap/pwd_img"
+        android:drawablePadding="15dp"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:password="true"
+        android:hint="请输入原密码"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/textsize_7" />
+    <EditText
+        android:id="@+id/pwd_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:password="true"
+        android:singleLine="true"
+        android:drawableLeft="@mipmap/pwd_img"
+        android:drawablePadding="15dp"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:hint="请输入6-12位新密码"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/textsize_7" />
+    <EditText
+        android:id="@+id/pwd_new_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:password="true"
+        android:singleLine="true"
+        android:drawableLeft="@mipmap/pwd_img"
+        android:drawablePadding="15dp"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:hint="请确认密码"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/textsize_7" />
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/conrnerbg_tijiao_jiao"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_9" />
+</LinearLayout>

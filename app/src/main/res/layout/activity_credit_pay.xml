@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECEB"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_back"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+
+    <TextView
+        android:id="@+id/money_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="需支付: 1050积分+分享10"
+        android:textColor="#2F2F2F"
+        android:textSize="@dimen/textsize_7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="当前余额:"
+        android:textColor="#2F2F2F"
+        android:textSize="@dimen/textsize_7" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="5dp"
+        android:padding="20dp"
+        android:text="当前兑换券积分余额: 0"
+        android:textColor="#2F2F2F"
+        android:textSize="@dimen/textsize_8" />
+        <TextView
+            android:id="@+id/show_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="该商品不参与兑换券返还"
+            android:paddingLeft="20dp"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@mipmap/start_img"
+            android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/conrnerbg_tijiao_jiao"
+        android:gravity="center"
+        android:text="确定支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_9" />
+</LinearLayout>

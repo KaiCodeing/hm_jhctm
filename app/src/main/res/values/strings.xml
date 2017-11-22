@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">久好C2M</string>
+    <string name="find_pwd"><u>忘记密码</u></string>
+    <string name="edit_address"><u>编辑</u></string>
+    <string name="delete_address"><u>删除</u></string>
+    <string name="contentdescription"></string>
+</resources>

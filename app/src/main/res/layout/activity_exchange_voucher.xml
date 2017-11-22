@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECEB">
+    <include layout="@layout/title_right_text"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_backgroid"></View>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/exchange_jifen_img">
+            <TextView
+                android:text="金积分余额"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_8"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jifen_text"
+                android:text="5000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_12"
+                android:layout_gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="#33999999"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tuiguang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="广告推广"
+                    android:visibility="gone"
+                    android:textSize="@dimen/textsize_7"
+                    android:background="@drawable/exchange_bg"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"/>
+                <TextView
+                    android:id="@+id/zhuanrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="金积分转让"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/textsize_7"
+                    android:background="@drawable/exchange_bg"
+                    android:padding="5dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/no_jifen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="冻结金积分: 无"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/textsize_7"
+            android:textColor="#2F2F2F"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#E9ECEB"></View>
+        <TextView
+            android:id="@+id/yes_jifen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:text="可用金积分: 5600"
+            android:textSize="@dimen/textsize_7"
+            android:textColor="#2F2F2F"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/goto_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金积分返还时间轴"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/textsize_7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="查看全部"
+            android:visibility="invisible"
+            android:textColor="#9FA1A0"
+            android:textSize="@dimen/textsize_7" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/sanjiao_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金积分交易记录"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/textsize_7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="查看全部"
+            android:visibility="invisible"
+            android:textColor="#9FA1A0"
+            android:textSize="@dimen/textsize_7" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/sanjiao_name" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <FrameLayout
+        android:id="@+id/buy_quan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_backgroid"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="购买金积分"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_8"
+            />
+        <ImageView
+            android:id="@+id/go_to_web"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/duihuan_wen_img"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"/>
+    </FrameLayout>
+</LinearLayout>
